@@ -1,0 +1,185 @@
+/* body{
+    height: 100%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} */
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('img/img1.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.caption-title{
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+main{
+    width: 30vw;
+    height: 53.5vh;
+    margin: auto;
+    padding: 10px;
+    /* background-color: whitesmoke; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px; 
+    background-color: rgba(207, 207, 207, 0.836);
+    padding: 3.5px;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+#result{
+    grid-area: 1 / 1 / 2 / 5; 
+    font-size: 20px;
+    width: 100%;
+}
+
+.grid-item {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    /* padding: 1.5px; */
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item button{
+    width: 100%;
+    height: 100%;
+}
+
+#digits button{
+    background-color: rgba(255, 255, 255, 0.835);
+    border: none;
+}
+
+#equal button{
+    background-color: rgba(95, 191, 230, 0.835);
+    border: none;
+}
+
+#operators button{
+    background-color: rgba(236, 236, 236, 0.835);
+    border: none;
+}
+
+#operators button:hover, #digits button:hover{
+    background-color: rgb(214, 214, 214);
+}
+
+#equal button:hover{
+    background-color: rgb(32, 171, 226);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: #333;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+
+header > *{
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+header h2{
+    float: left;
+    color: white;
+    padding: 0px 16px;
+    line-height: 5vh;
+    text-transform: uppercase;
+}
+
+.content{
+    padding: 10px;
+    height: auto;
+    text-align: justify;
+    font-size: large;
+    font-weight:300;
+    background-color: whitesmoke;
+}
+
+footer{
+    position: sticky;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    height: 5vh;
+    background-color: #333;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer p{
+    padding: 10px;
+    margin: auto;
+}
+
+#about, #module, #credits{
+    text-align: center;
+}
